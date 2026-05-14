@@ -7,30 +7,33 @@ The goal is to enable a language model to answer analytics-style questions relia
 
 ## Table of Contents
 
-1. [Data Preparation](#1-data-preparation)
-   1.1. [Download Data](#download-data)
-   1.2. [Clean Data](#clean-data)
+[1. Data Preparation](#1-data-preparation)
 
-2. [Preparing MCP Tools](#2-preparing-mcp-tools)
-   2.1. [What Kind of Questions Are Possible?](#what-kind-of-questions-are-possible)
-   2.2. [Raw Question Set](#raw-question-set)
+- [1.1. Download Data](#11-download-data)
+- [1.2. Clean Data](#12-clean-data)
 
-3. [Polishing the Questions](#3-polishing-the-questions)
+[2. Preparing MCP Tools](#2-preparing-mcp-tools)
 
-4. [How to Organize MCP Tools?](#4-how-to-organize-mcp-tools)
-   4.1. [Aggregator Tools](#1-aggregator-tools)
-   4.2. [Analyst Tools](#2-analyst-tools)
-   4.3. [Thematic Finder Tools](#3-thematic-finder-tools)
+- [2.1. What Kind of Questions Are Possible?](#21-what-kind-of-questions-are-possible)
+- [2.2. Raw Question Set](#22-raw-question-set)
 
-5. [Mapping Questions to MCP Tool Groups](#5-mapping-questions-to-mcp-tool-groups)
+[3. Polishing the Questions](#3-polishing-the-questions)
 
-6. [Making Hands Dirty](#6-making-hands-dirty)
+[4. How to Organize MCP Tools?](#4-how-to-organize-mcp-tools)
+
+- [4.1. Aggregator Tools](#41-aggregator-tools)
+- [4.2. Analyst Tools](#42-analyst-tools)
+- [4.3. Thematic Finder Tools](#43-thematic-finder-tools)
+
+[5. Mapping Questions to MCP Tool Groups](#5-mapping-questions-to-mcp-tool-groups)
+
+[6. Making Hands Dirty](#6-making-hands-dirty)
 
 ---
 
 ## 1. Data Preparation
 
-### Download Data
+### 1.1. Download Data
 
 The following datasets were downloaded as a **JSON** files:
 
@@ -38,7 +41,7 @@ The following datasets were downloaded as a **JSON** files:
 - Articles
 - Blog posts
 
-### Clean Data
+### 1.2. Clean Data
 
 After downloading, the data was cleaned and normalized to ensure:
 
@@ -52,11 +55,11 @@ After downloading, the data was cleaned and normalized to ensure:
 
 ## 2. Preparing MCP Tools
 
-### What Kind of Questions Are Possible?
+### 2.1. What Kind of Questions Are Possible?
 
 As a next step, a set of analytics questions was formulated based on the available data.
 
-### Raw Question Set
+### 2.2. Raw Question Set
 
 #### Events
 
@@ -214,7 +217,7 @@ Using an LLM, the raw questions were:
 
 After brainstorming, three main MCP tool categories were identified.
 
-### 1. Aggregator Tools
+### 4.1. Aggregator Tools
 
 **Goal:**
 Answer questions like:
@@ -229,7 +232,7 @@ Answer questions like:
 
 ---
 
-### 2. Analyst Tools
+### 4.2. Analyst Tools
 
 **Goal:**
 Answer questions like:
@@ -243,7 +246,7 @@ Answer questions like:
 
 ---
 
-### 3. Thematic Finder Tools
+### 4.3. Thematic Finder Tools
 
 **Goal:**
 Answer questions like:

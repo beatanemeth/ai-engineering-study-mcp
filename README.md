@@ -2,6 +2,9 @@
 
 This repository explores how **Model Context Protocol (MCP)** can be used to overcome a common limitation of RAG-based systems when working with **structured, real-world data** such as events, articles, and usage metrics.
 
+👉 **This project and the engineering experience behind it are discussed in the Medium article**:
+[Making AI Queries Work: From RAG’s Limits to MCP in Practice](https://medium.com/@beataspace/making-ai-queries-work-from-rags-limits-to-mcp-in-practice-0605238353bd)
+
 ## Table of Contents
 
 1. [Background & Motivation](#background--motivation)
@@ -14,12 +17,12 @@ This repository explores how **Model Context Protocol (MCP)** can be used to ove
 
 ## Background & Motivation
 
-- 📖 **Related Medium article**
+- **Related Medium article**
   [The AI Engineering Challenge: A Three-Step Journey into RAG, LangChain, and Real-World Data](https://medium.com/@beataspace/the-ai-engineering-challenge-a-three-step-journey-into-rag-langchain-and-real-world-data-90badbd139f0)
-- 🧑‍💻 **Related GitHub repository**
+- **Related GitHub repository**
   [LangChain RAG Project: Unified Custom Data Chat](https://github.com/beatanemeth/ai-engineering-custom-wix-data-chat)
 
-In the article above, it was identified that **InsightHubAI** struggled with _data mining_–style questions.
+In the mentioned article, it was identified that **InsightHubAI** struggled with _data mining_–style questions.
 This highlights a classic **“RAG vs. Structured Data”** problem:
 
 - Semantic search (RAG) is excellent at answering questions like
