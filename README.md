@@ -2,8 +2,10 @@
 
 This repository explores how **Model Context Protocol (MCP)** can be used to overcome a common limitation of RAG-based systems when working with **structured, real-world data** such as events, articles, and usage metrics.
 
-👉 **This project and the engineering experience behind it are discussed in the Medium article**:
+**This project and the engineering experience behind it are discussed in the Medium article**:  
 [Making AI Queries Work: From RAG’s Limits to MCP in Practice](https://medium.com/@beataspace/making-ai-queries-work-from-rags-limits-to-mcp-in-practice-0605238353bd)
+
+<br>
 
 ## Table of Contents
 
@@ -14,6 +16,8 @@ This repository explores how **Model Context Protocol (MCP)** can be used to ove
 5. [MCP Server Setup](#mcp-server-setup)
 6. [Technical Details](#technical-details)
 7. [Summary](#summary)
+
+<br>
 
 ## Background & Motivation
 
@@ -33,7 +37,7 @@ This highlights a classic **“RAG vs. Structured Data”** problem:
 The reason is simple: RAG retrieves **text chunks**, not **data rows**.
 Counting, aggregating, ranking, and filtering require structured access to data — not semantic similarity.
 
----
+<br>
 
 ## How MCP Improves InsightHubAI
 
@@ -52,7 +56,7 @@ it can:
 
 In short, MCP turns your data into a **functional database interface for the LLM**.
 
----
+<br>
 
 ## Data Preparation
 
@@ -71,7 +75,7 @@ To preserve structure without exposing real data:
 - a `/data_dummy` folder is included
 - it contains representative files with **dummy values** matching the original schemas
 
-**Note**: For simplicity, this is a one-time download rather than a continuous ingestion pipeline.
+**Note**: For simplicity, this is a **one-time download** rather than a continuous ingestion pipeline.
 
 ### Clean Data
 
@@ -90,7 +94,7 @@ This folder documents the full data preparation process, including cleaning, nor
 The cleaned datasets were saved locally in `/data_prepared`, which is excluded from GitHub.
 Instead, a `/data_prepared_dummy` folder is included with cleaned dummy data reflecting the final structure.
 
----
+<br>
 
 ## MCP Tools Development
 
@@ -105,7 +109,7 @@ In particular, review the `README.md` in that directory for:
 
 This section focuses on **how to think about MCP tools**, not just how to implement them.
 
----
+<br>
 
 ## MCP Server Setup
 
@@ -116,30 +120,28 @@ This section focuses on **how to think about MCP tools**, not just how to implem
 
 This setup demonstrates how the developed MCP tools can be exposed and invoked programmatically.
 
----
-
----
+<br>
 
 ## Technical Details
 
-This project is built using a local-first approach, prioritizing open-source tools and data privacy.
+This project is built using a **local-first approach**, prioritizing open-source tools and data privacy.
 
-### 📦 Prerequisites
+### Prerequisites
 
 - **Python 3.10 or higher**
 - **LLM Runtime**: [Ollama](https://ollama.com/) (running `qwen2.5:7b`)
 
-### 🖥️ Operating System Used
+### Operating System Used
 
 - Linux Mint 21.2 (development environment used)
 
-### 🤖 MCP Stack Overview
+### MCP Stack Overview
 
 - Protocol Framework: **FastMCP** (Python-based)
 - Intelligence Layer: **Ollama** running the Qwen 2.5 (7B) model.
 - Data Processing: **Pandas & Jupyter**.
 
-### 🐍 Python Virtual Environment
+### Python Virtual Environment
 
 It is best practice to use a virtual environment to isolate project dependencies.
 
@@ -178,7 +180,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-⚠️ **IMPORTANT:**
+**IMPORTANT:**
 Whether you have installed the **entire repository** or only want to use a **part of it**, you **must consult the dedicated README** for each service to understand how to **set it up** and **run it** correctly:
 
 - **MCP Server**: `/mcp_server/README.md`
@@ -195,7 +197,7 @@ deactivate
 
 Your command prompt will return to its default state, and the environment name (`.venv`) will disappear.
 
-### 🧹 Jupyter Cleanup & Git Hygiene
+### Jupyter Cleanup & Git Hygiene
 
 > This project uses `nbstripout` to keep notebook outputs out of version control and a `pre-commit` hook to ensure consistent formatting for all files.
 
@@ -210,9 +212,7 @@ To check all files and automatically clean notebook outputs before committing, r
 pre-commit run --all-files
 ```
 
----
-
----
+<br>
 
 ## Summary
 

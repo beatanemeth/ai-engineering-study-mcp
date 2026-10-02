@@ -2,15 +2,13 @@
 
 > If you only want to use the **Jupyter Notebook** environment independently, follow the steps below.
 
----
+<br>
 
-## Getting Started 🚀
+## Getting Started
 
 ### 1. Set Up Python Virtual Environment
 
 Ensure you have initialized your virtual environment as described in the **root `README.md`**.
-
----
 
 ### 2. Install Dependencies
 
@@ -27,7 +25,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-ℹ️ The `requirements.txt` file contains **all dependencies required** for this notebook environment:
+The `requirements.txt` file contains **all dependencies required** for this notebook environment:
 `jupyter`, `pandas`, `ipykernel`, `nbstripout`.
 
 ### 3. Register the Jupyter Kernel
@@ -48,7 +46,7 @@ Understanding the Flags:
 | Flag             | Name        | Purpose                                   | Recommendation                                         |
 | ---------------- | ----------- | ----------------------------------------- | ------------------------------------------------------ |
 | `--name`         | System Name | The unique ID used by the filesystem      | lowercase-with-hyphens; must be unique on your machine |
-| `--display-name` | Visual Name | The name shown in the Jupyter UI dropdown | Descriptive name (e.g. `Python (AI Engineering) 🤖`)   |
+| `--display-name` | Visual Name | The name shown in the Jupyter UI dropdown | Descriptive name (e.g. `Python (AI Engineering)`)      |
 
 #### Managing Your Kernels
 
@@ -77,7 +75,9 @@ If you no longer need the kernel (e.g. the project is finished), uninstall it us
 jupyter kernelspec uninstall ai-engineering-study-mcp
 ```
 
-## Using Jupyter ▶️
+<br>
+
+## Using Jupyter
 
 ### 1. **Launch Jupyter**
 
@@ -95,7 +95,9 @@ Once the Notebook opens:
 - Navigate to Kernel → Change Kernel
 - Then select: `Python (AI Engineering)`
 
-## Shutting Down 🛑
+<br>
+
+## Shutting Down
 
 When you are finished working, follow these steps to cleanly close your session:
 
@@ -117,11 +119,9 @@ deactivate
 
 Your command prompt will return to its default state, and the environment name (`.venv`) will disappear.
 
----
+<br >
 
----
-
-## Jupyter Cleanup 🧹
+## Jupyter Cleanup
 
 > This project uses `nbstripout` to keep notebook outputs out of version control.
 
