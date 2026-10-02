@@ -8,7 +8,9 @@ This microservice contains a simple **FastAPI** application that
 
 > If you only want to run this microservice independently, follow the steps below.
 
-## Getting Started 🚀
+<br>
+
+## Getting Started
 
 ### 1. Set Up Python Virtual Environment
 
@@ -32,7 +34,8 @@ WIX_EVENTS_ENDPOINT=https://www.yourdomain.com/_functions/yourEventsEndpoint
 ...
 ```
 
-⚠️ **Security Tip**: Never commit your `.env` file to version control.
+**Security Tip**:  
+Never commit your `.env` file to version control.
 
 ### 3. Install Dependencies
 
@@ -49,9 +52,11 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-ℹ️ The `requirements.txt` file contains _all dependencies required_ to run the service: `fastapi`, `uvicorn`, `requests`, `pyjwt`, `python-dotenv`.
+The `requirements.txt` file contains _all dependencies required_ to run the service: `fastapi`, `uvicorn`, `requests`, `pyjwt`, `python-dotenv`.
 
-## Run the Application ▶️
+<br>
+
+## Run the Application
 
 This process requires two terminal windows:
 
@@ -69,8 +74,6 @@ uvicorn main:app --reload
 ```
 
 _The server will automatically load your secrets from the `.env` file._ **_Keep this terminal open._**
-
----
 
 ### Terminal_2: Call the Endpoint:
 
@@ -117,7 +120,9 @@ curl http://127.0.0.1:8000/collection/articles-category
 curl http://127.0.0.1:8000/members
 ```
 
-## Shutting Down 🛑
+<br>
+
+## Shutting Down
 
 ### Terminal_1: Stop the Server
 

@@ -3,7 +3,7 @@
 The **`mcp_tools_development`** folder documents the process of designing and prototyping **MCP tools** based on structured content data (events, articles, and blog posts).
 The goal is to enable a language model to answer analytics-style questions reliably by routing them to the correct tool.
 
----
+<br >
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ The goal is to enable a language model to answer analytics-style questions relia
 
 [6. Making Hands Dirty](#6-making-hands-dirty)
 
----
+<br>
 
 ## 1. Data Preparation
 
@@ -49,9 +49,7 @@ After downloading, the data was cleaned and normalized to ensure:
 - Structured categories and tags
 - Reliable numeric fields (attendance, views, likes, waitlist counts)
 
----
-
----
+<br>
 
 ## 2. Preparing MCP Tools
 
@@ -78,8 +76,6 @@ As a next step, a set of analytics questions was formulated based on the availab
 - Which events had the highest "Waitlist" count?
 - High-demand events (highest waitlist) in a given year
 
----
-
 #### Articles
 
 - How many articles all time?
@@ -91,8 +87,6 @@ As a next step, a set of analytics questions was formulated based on the availab
 - Which months have the most publications?
 - What is the total list of unique tags used across the whole site?
 - Which tags are used most often?
-
----
 
 #### Blog Posts
 
@@ -111,9 +105,7 @@ As a next step, a set of analytics questions was formulated based on the availab
 - How many blog posts do the authors have? (Count per author)
 - Posts by a specific author
 
----
-
----
+<br>
 
 ## 3. Polishing the Questions
 
@@ -123,7 +115,7 @@ Using an LLM, the raw questions were:
 - clarified for **clear intent**
 - grouped into a structure resembling an **analytics specification or dashboard query list**
 
-### 📅 Events Analytics – Properly Formulated Questions
+### Events Analytics – Properly Formulated Questions
 
 #### General
 
@@ -157,7 +149,7 @@ Using an LLM, the raw questions were:
 
 ---
 
-### 📰 Articles Analytics – Properly Formulated Questions
+### Articles Analytics – Properly Formulated Questions
 
 #### General
 
@@ -179,7 +171,7 @@ Using an LLM, the raw questions were:
 
 ---
 
-### ✍️ Blog Posts Analytics – Properly Formulated Questions
+### Blog Posts Analytics – Properly Formulated Questions
 
 #### General
 
@@ -209,9 +201,7 @@ Using an LLM, the raw questions were:
 - How many blog posts has each author published?
 - Which blog posts were written by a specific author?
 
----
-
----
+<br>
 
 ## 4. How to Organize MCP Tools?
 
@@ -230,8 +220,6 @@ Answer questions like:
 - Filter by date
 - Return simple counts
 
----
-
 ### 4.2. Analyst Tools
 
 **Goal:**
@@ -243,8 +231,6 @@ Answer questions like:
 **Pandas logic**
 
 - Perform sums, averages, and rankings
-
----
 
 ### 4.3. Thematic Finder Tools
 
@@ -258,20 +244,18 @@ Answer questions like:
 
 - Filter content and return **lists of relevant items**, not metrics.
 
----
-
----
+<br>
 
 ## 5. Mapping Questions to MCP Tool Groups
 
 Using the polished questions, each one was mapped to the most appropriate MCP tool group.
 
-### 🧮 Aggregator Tools
+### Aggregator Tools
 
 **Goal:**
 Simple counts after filtering
 
-#### 📅 Events — Aggregators
+#### Events — Aggregators
 
 - What is the total number of events organized to date?
 - Which year had the highest number of events?
@@ -282,7 +266,7 @@ Simple counts after filtering
 - How many events were organized for a given category across all time?
 - How many events were organized for a given category in a specific year?
 
-#### 📰 Articles — Aggregators
+#### Articles — Aggregators
 
 - What is the total number of articles published to date?
 - Which year had the highest number of published articles?
@@ -292,7 +276,7 @@ Simple counts after filtering
 - How many articles were published for a given category?
 - How many articles were published for a given tag?
 
-#### ✍️ Blog Posts — Aggregators
+#### Blog Posts — Aggregators
 
 - What is the total number of blog posts published to date?
 - Which year had the highest number of blog posts published?
@@ -306,12 +290,12 @@ Simple counts after filtering
 
 ---
 
-### 📊 Analyst Tools
+### Analyst Tools
 
 **Goal:**
 Sums, rankings, averages, popularity
 
-#### 📅 Events — Analysts
+#### Events — Analysts
 
 - What is the total attendance across all events to date?
 - Which events have the highest attendance of all time?
@@ -321,7 +305,7 @@ Sums, rankings, averages, popularity
 - Which events have the highest waitlist counts of all time?
 - Which events had the highest waitlist counts in a given year?
 
-#### ✍️ Blog Posts — Analysts
+#### Blog Posts — Analysts
 
 - Which blog posts have the highest number of views and likes of all time?
 - Which blog posts have the highest number of views and likes in a specific year?
@@ -329,26 +313,26 @@ Sums, rankings, averages, popularity
 
 ---
 
-### 🧭 Thematic Finder Tools
+### Thematic Finder Tools
 
 **Goal:**
 Filter by tags, categories, and authors
 
-#### 📅 Events — Thematic Finders (Optional)
+#### Events — Thematic Finders (Optional)
 
 - What events are available for a given category?
 - What events were organized in a given year?
 - What online events are available?
 - What venue-based events are available?
 
-#### 📰 Articles — Thematic Finders
+#### Articles — Thematic Finders
 
 - What articles are available for a given category?
 - What articles are available for a given tag?
 - What is the complete list of unique tags used across the site?
 - Which tags are used most frequently?
 
-#### ✍️ Blog Posts — Thematic Finders
+#### Blog Posts — Thematic Finders
 
 - What blog posts are available for a given category?
 - What blog posts are available for a given tag?
@@ -363,9 +347,7 @@ When adding a new MCP tool, ask:
 - **Is the answer a ranked or summed metric?** → Analyst
 - **Is the answer a list of content?** → Thematic Finder
 
----
-
----
+<br>
 
 ## 6. Making Hands Dirty
 

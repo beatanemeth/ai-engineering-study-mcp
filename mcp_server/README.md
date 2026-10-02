@@ -9,7 +9,7 @@ The project uses **FastMCP**, a high-level framework for building Model Context 
 
 The overall intention is to use **local, free tools** only, without relying on third-party APIs.
 
----
+<br>
 
 ## MCP Components
 
@@ -28,7 +28,7 @@ To understand how this project works, it helps to define the core roles in the M
 - **Tools**
   Executable functions provided by the server. For example, a tool might query a local JSON file or calculate an average attendance count.
 
----
+<br>
 
 ## Project Structure
 
@@ -43,11 +43,9 @@ To understand how this project works, it helps to define the core roles in the M
 While many tutorials rely on tools like `MCPHost` or Claude Desktop, this project implements the host logic directly in `client.py`.
 This makes the MCP handshake explicit and demonstrates how to build a fully custom, integrated AI system.
 
----
+<br>
 
----
-
-## Getting Started 🚀
+## Getting Started
 
 ### 1. Setup Python Virtual Environment
 
@@ -68,7 +66,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-ℹ️ The `requirements.txt` file contains _all dependencies required_ to run the service: `fastmcp`, `ollama`, `mcp`, `pandas`.
+The `requirements.txt` file contains _all dependencies required_ to run the service: `fastmcp`, `ollama`, `mcp`, `pandas`.
 
 Then, you can check that the server will run using the following command:
 
@@ -80,13 +78,13 @@ What this does: This command initializes the server and makes it available to ot
 
 Exit with` Ctrl + D` or `/bye`.
 
----
+<br>
 
-## Ollama Setup (Local LLM) ⚙️
+## Ollama Setup (Local LLM)
 
 To process requests locally without third-party API costs, you need to install and run Ollama.
 
-⚠️ **Important**: Ollama is a system-level service. The Ollama setup should be done in a globally opened terminal, not in the projects `.venv`.
+**Important**: Ollama is a system-level service. The Ollama setup should be done in a globally opened terminal, not in the projects `.venv`.
 
 ### 1. Download & Install:
 
@@ -114,9 +112,9 @@ ollama run qwen2.5:7b
 
 Exit with` Ctrl + D` or `/bye`.
 
----
+<br>
 
-## Running the MCP Application ▶️
+## Running the MCP Application
 
 This process requires two terminal windows:
 
@@ -137,7 +135,9 @@ With the virtual environment active:
 python3 client.py
 ```
 
-## Shutting Down 🛑
+<br>
+
+## Shutting Down
 
 ### Terminal_1:Stop Ollama
 
